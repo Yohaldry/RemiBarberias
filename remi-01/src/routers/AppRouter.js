@@ -14,7 +14,6 @@ import {  getAuth,onAuthStateChanged } from "firebase/auth";
 import UsuarioConsumidor from '../Containers/UsuarioConsumidor'
 import Desboard from "../Containers/Desboard";
 
-
 export default function AppRouter() {
 
   const auth = getAuth();
@@ -54,6 +53,12 @@ export default function AppRouter() {
                         exact
                         path="/"
                         component={UsuarioConsumidor}
+                        isAuthenticated ={isLooggedIn}
+                    />
+                     <PrivateRoute
+                        exact
+                        path="/perfil"
+                        component={Desboard}
                         isAuthenticated ={isLooggedIn}
                     />
 

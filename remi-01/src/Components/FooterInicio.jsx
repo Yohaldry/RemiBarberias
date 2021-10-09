@@ -1,6 +1,8 @@
 import React, {Fragment} from 'react'
 
+
 export const FooterInicio = () => {
+
     return (
         <Fragment>
         <div className="ContainerFooterInicio">

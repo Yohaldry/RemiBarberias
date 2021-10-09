@@ -1,6 +1,7 @@
 import {types} from '../types/types';
 import {  getAuth, signInWithPopup,signInWithEmailAndPassword,signOut  } from "firebase/auth";
-import { google } from '../firebase/firebaseConfig';
+import { google,facebook } from '../firebase/firebaseConfig';
+
 import Swal from 'sweetalert2'
 
 
@@ -32,6 +33,18 @@ export const loginEmailPassword = (email,password) =>{
          
           })
        })
+    }
+}
+export const loginFacebook = () => {
+    return(dispatch) => {
+        const auth = getAuth();
+        signInWithPopup(auth,facebook)
+        .then(({user})=> {
+            dispatch(loginSincrono(user.uid,user.displayName))
+        })
+        .catch(e => {
+            console.log(e)
+        })
     }
 }
 

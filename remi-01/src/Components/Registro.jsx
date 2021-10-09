@@ -1,5 +1,6 @@
 import { useForm } from '../hooks/useForm';
 import {registroEmailPasswordNombre} from '../actions/actionRegister';
+import HeaderInicio from '../Components/HeaderInicio'
 import {useDispatch} from 'react-redux'
 import Swal from 'sweetalert2'
 
@@ -35,6 +36,9 @@ const Registro = () => {
 
 
     return (
+        <div>
+            <HeaderInicio/>
+        
     <form id="registro-form" onSubmit={handleRegistro}>
         <div className="container_Registro">
             <img className="User" src="https://res.cloudinary.com/dtkirmtfq/image/upload/v1632817110/Remi/Imagen6_bnc1ph.png" alt="" />
@@ -67,6 +71,7 @@ const Registro = () => {
             </div>
         </div>
         </form>
+        </div>
     )
 }
 

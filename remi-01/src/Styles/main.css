@@ -13,13 +13,13 @@
 
     display: flex;
     height: 40px;
-    margin-left: 210px;
+    margin-left: 180px;
     margin-top: 37px;
 }
 
 .About_Secciones li{
 
-    margin-left: 20px;
+    margin-left: 10px;
     list-style: none;
     color: rgb(0, 0, 0);
     font-family: 'Play', sans-serif;
@@ -75,21 +75,6 @@
     color: #0033FF;
 }
 
-.google-icon{
-
-    width: 80px;
-    height: 30px;
-    margin-top: 32px;
-    cursor: pointer;
-    transition: 0.5s;
-    
-}
-
-.google-icon:hover{
-
-    width: 90px;
-    height: 40px;
-}
 .REMI{
 
     width: 60px;
@@ -126,10 +111,104 @@
 }
 
 
+/* LOGIN */
+.container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width: 350px;
+    height: 750px;
+    margin: auto;
+    border: 1px solid lightgray;
+    box-shadow: 3px 4px 8px 8px lightgray;
+    margin-top:3rem;
+    padding:20px;
+    font-family: 'Play', sans-serif;
+}
+.logo-remi{
+    width: 130px;
+    margin-top:1rem;
+}
+.tit{ 
+    font-size: 30px;
+    font-style: italic;
+    margin-top: 1rem;
+}
+.container-email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:2rem;
+}
+.email-login, .email-password{ 
+    font-size: 25px;
+}
+.input-email, .input-password{ 
+    margin-top:1rem;
+    width: 100%;
+    height: 30px;
+}
 
+.container-password{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:1rem;
+}
+.button-enviar{
+    width:100%;
+    margin-top:1rem;
+    height:35px;
+    background-color:#2745bd;
+    color: white;
+    font-family: 'Play', sans-serif;
+    font-size:20px;
+}
+.ti-redes{
+    margin-top:2rem;
+    text-align:center;
+    font-size: 20px;
+}
+.redes-sociales{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction:row;
+    align-content: space-between;
+    align-items: center;
+}
+.google-icon,.facebook-icon{
+    width:60px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.google-icon:hover,
+.facebook-icon:hover{
+    width: 80px;
 
-
-
+}
+.google{
+    margin-left: 2rem;
+}
+.facebook{
+    margin-left: 10em;
+}
+.parrafo{
+    margin-top: 1rem;
+    text-align: center;
+    font-size:15px;
+}
+.p-registro{
+    margin-top: 1rem;
+    font-size:25px;
+}
+.regis{
+    font-size:20px;
+    margin-top: 1rem;
+    color: black;
+}
+#link{
+    text-decoration: none;
+}
 
 
 

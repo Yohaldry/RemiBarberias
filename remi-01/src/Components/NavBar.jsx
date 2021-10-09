@@ -1,9 +1,16 @@
 import React, {Fragment, useState} from 'react'
-import Contenido from './Contenido';
+import { useDispatch } from "react-redux";
+import { startLogout } from "../actions/actionLogin";
+import ListUser from '../Components/ListUser'
 import MenuCompleto from './MenuCompleto';
 
 
 const NavBar = () => {
+    const dispatch = useDispatch();
+    const handleLogout = () => {
+      dispatch(startLogout());
+    };
+
 
         const [menu, setMenu] = useState(false)
 
@@ -17,6 +24,9 @@ const NavBar = () => {
  
                 <input type="search" placeholder="Buscar"/>
                 <button className="BotonBuscar"><i class="fas fa-search"></i></button>
+                <div className="logout">
+                <button onClick={handleLogout}>Logout</button>
+                    </div>
             </div>
 
             <div className="Imagen_bienvenida">
@@ -35,7 +45,7 @@ const NavBar = () => {
                     }
                     <a href="https://api.whatsapp.com/send?phone=573223908903&text=Hola,%20vengo%20de%20la%20pagina%20REMI%20y%20me%20interesan%20sus%20servicios" className="BotonWhatsApp"><i class="fab fa-whatsapp"></i></a>
             </div>
-        <Contenido />   
+        <ListUser/>   
            
      
         </div>
