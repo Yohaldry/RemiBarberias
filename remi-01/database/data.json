@@ -1,0 +1,122 @@
+{   
+    "datos":[
+    {
+        "id": 1,
+        "nombre":"Yohaldry Quintero",
+        "estado":"Barbero Independiente",
+        "experiencia":"3",
+        "fotoperfil":"https://res.cloudinary.com/dtkirmtfq/image/upload/v1630625967/perfil_omtjfd.jpg",
+        "empleo":"No"
+    },
+    {
+        "id": 2,
+        "nombre": "Pedro Colmenarez",
+        "estado": "Empleado",
+        "experiencia": "1",
+        "fotoperfil": "https://www.gravatar.com/avatar/24acd98e5d71a6a789488b4c049de9fe?s=200",
+        "empleo": "SI"
+    },
+    {
+        "id": 3,
+        "nombre": "Luis Perez",
+        "estado": "Barbero Independiente",
+        "experiencia": "7",
+        "fotoperfil": "https://img.europapress.es/fotoweb/fotonoticia_20150331134913-15031252329_420.jpg",
+        "empleo": "No"
+    },
+    {
+        "id": 4,
+        "nombre": "Cristina Parra",
+        "estado": "Barbero Independiente",
+        "experiencia": "5",
+        "fotoperfil": "https://img.europapress.es/fotoweb/fotonoticia_20150331134913-15031252319_500.jpg",
+        "empleo": "No"
+    },
+    {
+        "id": 5,
+        "nombre": "Luz Cabrera",
+        "estado": "Barbero Independiente",
+        "experiencia": "1",
+        "fotoperfil": "https://skytienda.com/wp-content/uploads/2019/05/face.jpg",
+        "empleo": "No"
+    },
+    {
+        "id": 6,
+        "nombre": "Figaro Barberias",
+        "estado": "Establecimiento Fisico",
+        "experiencia": "15",
+        "fotoperfil": "https://dcx13p9dsx90t.cloudfront.net/uploads/logos/page_logo_51c1773835582431.png",
+        "empleo": "No"
+    },
+    {
+        "id": 7,
+        "nombre": "BarberShop",
+        "estado": "Establecimiento Fisico",
+        "experiencia": "4",
+        "fotoperfil": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTijaqaZVCPBZR4BXNfpkVC-TF5R628B2TN3A&usqp=CAU",
+        "empleo": "No"
+    },
+
+
+
+
+    {
+        "id": 8,
+        "nombre":"Yohaldry Quintero",
+        "estado":"Barbero Independiente",
+        "experiencia":"3",
+        "fotoperfil":"https://res.cloudinary.com/dtkirmtfq/image/upload/v1630625967/perfil_omtjfd.jpg",
+        "empleo":"No"
+    },
+    {
+        "id": 9,
+        "nombre": "Pedro Colmenarez",
+        "estado": "Empleado",
+        "experiencia": "1",
+        "fotoperfil": "https://www.gravatar.com/avatar/24acd98e5d71a6a789488b4c049de9fe?s=200",
+        "empleo": "SI"
+    },
+    {
+        "id": 10,
+        "nombre": "Luis Perez",
+        "estado": "Barbero Independiente",
+        "experiencia": "7",
+        "fotoperfil": "https://img.europapress.es/fotoweb/fotonoticia_20150331134913-15031252329_420.jpg",
+        "empleo": "No"
+    },
+    {
+        "id": 11,
+        "nombre": "Cristina Parra",
+        "estado": "Barbero Independiente",
+        "experiencia": "5",
+        "fotoperfil": "https://img.europapress.es/fotoweb/fotonoticia_20150331134913-15031252319_500.jpg",
+        "empleo": "No"
+    },
+    {
+        "id": 12,
+        "nombre": "Luz Cabrera",
+        "estado": "Barbero Independiente",
+        "experiencia": "1",
+        "fotoperfil": "https://skytienda.com/wp-content/uploads/2019/05/face.jpg",
+        "empleo": "No"
+    },
+    {
+        "id": 13,
+        "nombre": "Figaro Barberias",
+        "estado": "Establecimiento Fisico",
+        "experiencia": "15",
+        "fotoperfil": "https://dcx13p9dsx90t.cloudfront.net/uploads/logos/page_logo_51c1773835582431.png",
+        "empleo": "No"
+    },
+    {
+        "id": 14,
+        "nombre": "BarberShop",
+        "estado": "Establecimiento Fisico",
+        "experiencia": "4",
+        "fotoperfil": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTijaqaZVCPBZR4BXNfpkVC-TF5R628B2TN3A&usqp=CAU",
+        "empleo": "No"
+    }
+    
+
+    ]
+}
