@@ -7,10 +7,11 @@ const header = styled.header`
      height: 90px;
      background-color: #ffffff;
      display: flex;
-     // position: fixed;
-     z-index: 1;
+     position: fixed;
      opacity: 0.8;
      text-decoration: none;
+     z-index: 1;
+
 `;
 
 export const Header = header    

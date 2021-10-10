@@ -29,34 +29,30 @@ function Login() {
 
   return (
       <div>
-           <HeaderInicio/>
     <div className="container">
     <h1 className="tit">Iniciar Sesión</h1>
-    <img className="logo-remi" src="https://res.cloudinary.com/dtkirmtfq/image/upload/v1633669900/Remi/Imagen3_gqex9c.png" alt="remi"/>
+    <img className="logo-remi" src="https://res.cloudinary.com/dtkirmtfq/image/upload/v1632818447/Remi/Imagen3_p5ft9s.png" alt="remi"/>
     <form onSubmit={handleLogin}>
       <div className="container-email">
-        <label className="email-login">Correo Electrónico</label><br></br>
         <input
           type="email"
-          placeholder="Enter email"
+          placeholder="Email"
           name="email"
           className="input-email"
           value={email}
           onChange={handleInputChange}
         />
-      </div>
+     
 
-      <div className="container-password">
-        <label className="email-password">Contraseña</label>
         <input
           type="password"
-          placeholder="Enter Password"
+          placeholder="Password"
           className="input-email"
           name="password"
           value={password}
           onChange={handleInputChange}
         />
-      </div>
+   </div>
       <button  className="button-enviar" type="submit">
         Enviar
       </button>
@@ -65,9 +61,7 @@ function Login() {
         <div className="redes-sociales">
             <div className="google">
                  <img onClick={handleGoogle} class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="google" />
-            </div>
-            <div className="facebook">
-                <img onClick={handleFacebook} className="facebook-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/1200px-Facebook_icon.svg.png" alt="facebook" />
+                 <img onClick={handleFacebook} className="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/1200px-Facebook_icon.svg.png" alt="facebook" />
             </div>
         </div>
 
@@ -75,7 +69,7 @@ function Login() {
 
     </form>
     <p className="p-registro">¿Eres nuevo en REMI?</p>
-      <Link id="regis" className="regis" to="/auth/registro">Crea tu cuenta en REMI</Link>
+      <Link id="regis" className="regis" to="/auth/login">Crea tu cuenta en REMI</Link>
     </div>
     </div>
     

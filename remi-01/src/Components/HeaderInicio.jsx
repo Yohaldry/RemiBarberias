@@ -14,12 +14,12 @@ return (
         <Header>
                <h1 className="REMI">REMI</h1>
                 <ul className="About_Secciones">
+                <Link id="link"  to="/auth/inicioSesion"><li >Iniciar Sesion</li></Link>
+                <a  id="link" href="#registro-form"><li>Registrate</li></a>
                     <li>Inicio</li>
                     <li>Aliados</li>
                     <li>Cobertura</li>
                     <li>Empleo</li>
-                    <Link  id="link" to="/auth/registro"><li>Registrate</li></Link>
-                    <Link id="link"  to="/auth/inicioSesion"><li >IniciarSesion</li></Link>
                 </ul>
                
         </Header>

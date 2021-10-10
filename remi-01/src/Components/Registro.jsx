@@ -37,7 +37,6 @@ const Registro = () => {
 
     return (
         <div>
-            <HeaderInicio/>
         
     <form id="registro-form" onSubmit={handleRegistro}>
         <div className="container_Registro">

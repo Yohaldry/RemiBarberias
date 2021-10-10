@@ -13,7 +13,7 @@
 
     display: flex;
     height: 40px;
-    margin-left: 180px;
+    margin-left: 680px;
     margin-top: 37px;
 }
 
@@ -112,12 +112,19 @@
 
 
 /* LOGIN */
+
+.container-email input{
+
+    border-radius: 10px;
+    font-family: 'Play', sans-serif;
+
+}
 .container{
     display:flex;
     flex-direction:column;
     align-items:center;
     width: 350px;
-    height: 750px;
+    height: 600px;
     margin: auto;
     border: 1px solid lightgray;
     box-shadow: 3px 4px 8px 8px lightgray;
@@ -137,11 +144,12 @@
 .container-email{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top:2rem;
+
+    
 }
 .email-login, .email-password{ 
     font-size: 25px;
+    
 }
 .input-email, .input-password{ 
     margin-top:1rem;
@@ -157,12 +165,23 @@
 }
 .button-enviar{
     width:100%;
+    border-radius: 10px;
     margin-top:1rem;
     height:35px;
     background-color:#2745bd;
     color: white;
     font-family: 'Play', sans-serif;
     font-size:20px;
+    cursor: pointer;
+    transition: 0.5s;
+    border: none;
+}
+
+.button-enviar:hover{
+
+    background-color:#ffffff;
+    color: #2745bd;
+    border: 1px solid #2745bd;
 }
 .ti-redes{
     margin-top:2rem;
@@ -176,21 +195,19 @@
     align-content: space-between;
     align-items: center;
 }
-.google-icon,.facebook-icon{
-    width:60px;
+.google-icon{
+    width:50px;
     cursor: pointer;
     transition: 0.5s;
 }
-.google-icon:hover,
-.facebook-icon:hover{
-    width: 80px;
-
+.google-icon:hover{
+    width: 60px;
 }
 .google{
-    margin-left: 2rem;
-}
-.facebook{
-    margin-left: 10em;
+    margin-left: 7rem;
+    display: flex;
+    gap: 2em;
+    position: relative;
 }
 .parrafo{
     margin-top: 1rem;
@@ -477,34 +494,35 @@
 .Form_Registro{
 
     width: 700px;
-    height: 300px;
-    background-image: url('https://res.cloudinary.com/dtkirmtfq/image/upload/v1632818711/Remi/Imagen7_vnienx.jpg');
+    /* height: 100px; */
+    /* background-image: url('https://res.cloudinary.com/dtkirmtfq/image/upload/v1632818711/Remi/Imagen7_vnienx.jpg'); */
     background-repeat: no-repeat;
     background-size: 800px;
     margin-left: 100px;
     margin-top: 130px;
-    box-shadow: 0px 0px 50px 13px;
+    box-shadow: 10px 50px 80px 3px;
     display: grid;
-    gap: 1em;
     height: 700px;
  
 }
 
 .Form_Registro input{
-    margin: 0px 120px 30px 120px;
+    margin: 0px 130px 0px 130px;
+    margin-bottom: -80px;
+    height: 50px;
     background-color: rgb(245, 245, 245);
-    font-size: 25px;
+    font-size: 20px;
     padding-left: 14px;
-    border-radius: 30px;
+    border-radius: 10px;
+    border: 4px solid #0033FF;
     font-family: 'Play', sans-serif;
     color: rgb(0, 0, 0);
     opacity: 0.7;
     padding-bottom: -30px;
-    box-shadow: 8px 8px 2px 10px;
 }
 
 .Form_Registro h1{
-    color: #ffffff;
+    color: #0033FF;
     font-family: 'Play', sans-serif;
     text-align: center;
     margin-top: -9px;
@@ -518,7 +536,7 @@
     margin-left: 150px;
     border-radius: 30px;
     background: white;
-    border: 6px solid #0033FF;
+    border: 1px solid #0033FF;
     font-size: 30px;
     color: #0033FF;
     font-family: 'Play', sans-serif;
@@ -529,7 +547,7 @@
 
 .Form_Registro button:hover{
 
-    background-color: none;
+    background-color: #000000;
 }
 
 .container_Registro{
