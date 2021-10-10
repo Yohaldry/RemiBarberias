@@ -117,6 +117,10 @@
 
     border-radius: 10px;
     font-family: 'Play', sans-serif;
+    border-bottom: 5px solid #2745bd;
+    border-left: none;
+    border-top: none;
+    border-right: none;
 
 }
 .container{
