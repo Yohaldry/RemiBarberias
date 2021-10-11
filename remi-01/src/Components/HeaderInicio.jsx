@@ -9,6 +9,9 @@ import {Header} from '../Styles/Styles'
 
 const HeaderInicio = () => {
 
+    
+        
+
 return (
         <Fragment>
         <Header>
@@ -17,9 +20,9 @@ return (
                 <Link id="link"  to="/auth/inicioSesion"><li >Iniciar Sesion</li></Link>
                 <a  id="link" href="#registro-form"><li>Registrate</li></a>
                     <li>Inicio</li>
-                    <li>Aliados</li>
-                    <li>Cobertura</li>
-                    <li>Empleo</li>
+                    <a id="link" href="#Aliados">Aliados</a>
+                    <a id="link">Cobertura</a>
+                    <a id="link">Empleo</a>
                 </ul>
                
         </Header>

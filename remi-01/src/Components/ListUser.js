@@ -31,10 +31,11 @@ const ListUser = () => {
             <div className="BarberiasYBarberos" key={index}>
               <img src={us.imagen} alt="img" />
               <h5>{us.nombre}</h5>
+              <hr/>
               <ul>
                 <li>{us.estado}</li>
-                <li>{us.experiencia}</li>
-                <li>{us.empleo}</li>
+                <li>Experiencia  {us.experiencia}  Años</li>
+                <li>{us.direccion}</li>
               </ul>
             </div>
           ))}

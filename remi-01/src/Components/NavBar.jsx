@@ -1,22 +1,18 @@
 import React, {Fragment, useState} from 'react'
-import { useDispatch } from "react-redux";
-import { startLogout } from "../actions/actionLogin";
+
 import ListUser from '../Components/ListUser'
 import MenuCompleto from './MenuCompleto';
 
 
 const NavBar = () => {
-    const dispatch = useDispatch();
-    const handleLogout = () => {
-      dispatch(startLogout());
-    };
+    
 
 
         const [menu, setMenu] = useState(false)
 
     return (
     <Fragment>
-        <div className="container_inicio">
+        <div id="Inicio" className="container_inicio">
             <div className="headerPrincipal">
 
                 <h2 onClick={() => {setMenu(true)}} className="MenuDesplegables"><i class="fas fa-bars"></i></h2>
@@ -24,9 +20,7 @@ const NavBar = () => {
  
                 <input type="search" placeholder="Buscar"/>
                 <button className="BotonBuscar"><i class="fas fa-search"></i></button>
-                <div className="logout">
-                <button onClick={handleLogout}>Logout</button>
-                    </div>
+              
             </div>
 
             <div className="Imagen_bienvenida">

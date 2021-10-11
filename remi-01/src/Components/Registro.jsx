@@ -19,6 +19,16 @@ const Registro = () => {
     const { nombre, email, pass1, pass2 } = formValues;
 
     const handleRegistro = (e) => {
+
+        if(nombre === '' || email === '' || pass1 === '' || pass2 === ''){
+
+            Swal.fire(
+                'Todos los campos son Obligatorios',
+                '¡Escribelo asi y solo asi podras Registrate!',
+                'info'
+              )
+        }else{
+
         e.preventDefault();
         dispatch(registroEmailPasswordNombre(email,pass1,nombre))
         
@@ -28,9 +38,9 @@ const Registro = () => {
             icon: 'success',
             title: 'Usuario Guardado',
             showConfirmButton: false,
-            timer: 60500,
-            footer: '<a style="font-size:40px; background-color: black; border-radius: 30px; width: 300px; text-align: center;" href="">Iniciar Sesion</a>'
+            timer: 1000,
           })
+        }
     }
 
 

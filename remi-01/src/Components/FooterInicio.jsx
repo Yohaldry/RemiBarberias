@@ -5,11 +5,11 @@ export const FooterInicio = () => {
 
     return (
         <Fragment>
-        <div className="ContainerFooterInicio">
+        <div id="footerInicio" className="ContainerFooterInicio">
             <div className="logoFooter">
                 <img src="https://res.cloudinary.com/dtkirmtfq/image/upload/v1633669900/Remi/Imagen3_gqex9c.png" alt="" />
                 <p>La mayor red de profesionales de belleza <br />
-                     con presencia en Bogota, Cali y Medellin</p>
+                     con presencia en Bogota</p>
             </div> 
             <div className="infoFooterInicio">
                 <h2>¿Quienes Somos?</h2>
@@ -26,7 +26,7 @@ export const FooterInicio = () => {
                 <hr /><br/>
                 <div className="redes">
                 <p>
-                    <i class="fab fa-facebook-f"></i>
+                   <i  class="fab fa-facebook-f"></i>
                 </p>
                 <p>
                     <i class="fab fa-instagram"></i>

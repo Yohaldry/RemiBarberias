@@ -26,17 +26,19 @@
     cursor: pointer;
     font-size: 17px;
     transition: 0.5s;
+   
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.About_Secciones li:hover{
+/* .About_Secciones li:hover{
 
     color: #ffffff;
     background-color: #0033FF;
     border-radius: 20px;
+    height: 10px;
     
-}
+} */
 
 .CorreoConstraseña{
 
@@ -230,6 +232,25 @@
 }
 #link{
     text-decoration: none;
+
+    margin-left: 10px;
+    list-style: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Play', sans-serif;
+    cursor: pointer;
+    font-size: 17px;
+    transition: 0.5s;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+#link:hover{
+
+    color: #ffffff;
+    background-color: #0033FF;
+    border-radius: 20px;
+    
 }
 
 
@@ -808,7 +829,10 @@
     color: chartreuse;
     font-size: 50px;
 }
+.BarberiasYBarberos ul li{
 
+    padding-top: 20px;
+}
 .BarberiasYBarberos{
 
     width: 320px;
@@ -1126,4 +1150,92 @@
 .Caracteristicas_Perfil h1{
 
     color: #0033FF;
+}
+
+
+
+
+/* aliados */
+
+.Aliados ul{
+
+    padding-top: 5em;
+}
+
+.Aliados ul h2{
+
+    font-family: 'Play', sans-serif;
+    font-size: 30px;
+    color: rgb(0, 235, 39);
+
+}
+.Aliados ul li{
+
+    padding-top: 1em;
+    font-family: 'Play', sans-serif;
+    color: white;
+    
+
+}
+
+#vendedores{
+    width: 12em;
+    height: 29em;
+    padding-left: 5em;
+   
+
+}
+
+#Barberos{
+    width: 15em;
+    height: 30em;
+    padding-left: 5em;
+}
+
+#Barberias{
+
+    padding-top: 2em;
+    width: 14em;
+    height: 27em;
+   
+}
+
+.Aliados{
+
+    display: flex;
+}
+
+.container_Aliados{
+
+    width: 100%;
+    height: auto;
+    background-color: #0033FF;
+}
+
+.container_Aliados h1 span{
+    color: #00d824;
+}
+.container_Aliados h1{
+
+    font-family: 'Play', sans-serif;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 150px;
+}
+
+
+
+#Cbogota{
+
+    background-color: white;
+    margin-top: 150px;
+    color: #0033FF;
+    width: 300px;
+    height: 100px;
+    padding-top: 20px;
+    margin-left: 600px;
+    margin-right: 100px;
+    border-radius: 50px;
+
 }

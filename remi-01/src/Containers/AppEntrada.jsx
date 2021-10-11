@@ -1,6 +1,8 @@
 import React from 'react'
+import Aliados from '../Components/Aliados'
 
 import Burbujas from '../Components/Burbujas'
+import Cobertura from '../Components/Cobertura'
 
 import HeaderInicio from '../Components/HeaderInicio'
 import Registro from '../Components/Registro'
@@ -12,7 +14,8 @@ const AppEntrada = () => {
            <HeaderInicio />
            <Burbujas />
             <Registro /> 
-          
+            <Aliados />
+            <Cobertura />
         </div>
     )
 } 
