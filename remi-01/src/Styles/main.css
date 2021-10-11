@@ -717,25 +717,35 @@
     height: 80vh;
     position: fixed;
     font-family: 'Play', sans-serif;
-    transition: 1s;
+    transition: 0.5s;
     z-index: 1;
     
 }
+.MenuCompleto ul a{
 
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.MenuCompleto ul a:hover{
+
+    color: rgb(0, 16, 136);
+    transition: 0.5s;
+}
 .MenuCompleto ul li{
 
     color: white;
     cursor: pointer;
     margin-top: 20px;
-    transition: 1s;
+    transition: 0.5s;
     
 }
 
 .MenuCompleto ul li:hover{
     
-    text-decoration: underline;
-    color: rgb(170, 170, 170);
-    transition: 1s;
+    color: rgb(0, 16, 136);
+    transition: 0.5s;
 }
 
 .Pull{
@@ -1238,4 +1248,104 @@
     margin-right: 100px;
     border-radius: 50px;
 
+}
+
+.ProductosLinea{
+
+    padding-top: 0.1px;
+  
+}
+
+.PanelCRUD{
+
+    width: 500px;
+    height: 614px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: -10px -10px 40px -10px;
+    margin-top: 80px;
+    position: fixed;
+}
+
+.PanelCRUD h1{
+
+    font-family: 'Play', sans-serif;
+    text-align: center;
+
+}
+
+.PanelCRUD input{
+
+    width: 70%;
+    height: 50px;
+    border-radius: 15px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-left: 20px;
+    border-bottom: 5px solid #0033FF;
+    font-family: 'Play', sans-serif;
+    font-size: 20px;
+    margin-left: 80px;
+    margin-top: 5px;
+}
+
+.PanelCRUD p{
+
+    margin-left: 150px;
+    font-family: 'Play', sans-serif;
+    font-size: 13px;
+    color: #00d824;
+}
+
+.PanelCRUD button{
+
+    margin-left: 130px;
+    width: 250px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 3px solid #0033FF;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.PanelCRUD button:hover{
+
+    background-color: #0033FF;
+    color: white;
+}
+.AddProductos{
+    padding-top: 0px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    
+
+}
+.AddProductos input{
+
+    margin-top: 0px;
+}
+
+
+.AddForm button{
+
+    width: 80px;
+    margin-top: -60px;
+    margin-left: 160px;
+    background-color: red;
+    color: white;
+    border: none;
+
+}
+
+.Vendedor img{
+    width: 170px;
+    margin-left: 180px;
+}
+.AddForm .guardarProducto{
+
+    background-color: #009118;
+    margin-top: 5px;
+    margin-left: 10px;
 }

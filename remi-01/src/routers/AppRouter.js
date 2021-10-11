@@ -13,6 +13,7 @@ import { AuthRouter } from "./AuthRouter";
 import {  getAuth,onAuthStateChanged } from "firebase/auth";
 import UsuarioConsumidor from '../Containers/UsuarioConsumidor'
 import Desboard from "../Containers/Desboard";
+import ProductosLinea from "../Containers/ProductosLinea";
 
 export default function AppRouter() {
 
@@ -61,7 +62,12 @@ export default function AppRouter() {
                         component={Desboard}
                         isAuthenticated ={isLooggedIn}
                     />
-
+                    <PrivateRoute
+                        exact
+                        path="/productos"
+                        component={ProductosLinea}
+                        isAuthenticated ={isLooggedIn}
+                    />
  
                     <Redirect to="/auth/login" />
                 </Switch>

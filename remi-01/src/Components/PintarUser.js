@@ -6,7 +6,7 @@ const PintarUser = () => {
   const dispatch = useDispatch();
 
   const { user } = useSelector((store) => store.user);
-  console.log(user);
+  // console.log(user);
   useEffect(() => {
     dispatch(listarUserAsincronico());
   }, [dispatch]);

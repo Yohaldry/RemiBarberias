@@ -20,8 +20,7 @@ export const loginEmailPassword = (email,password) =>{
                 icon: 'success',
                 title: 'Bienvenid@',
                 showConfirmButton: false,
-                timer: 60500,
-                footer: '<a style="font-size:40px; background-color: black; border-radius: 30px; width: 300px; text-align: center;" href="/inicio">Vamos</a>'
+                timer: 1500,
               })
        })
        .catch(e =>{
