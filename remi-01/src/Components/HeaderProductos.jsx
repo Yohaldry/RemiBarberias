@@ -5,7 +5,7 @@ import { db } from '../firebase/firebaseConfig';
 const HeaderProductos = () => {
 
     const addtask = async (values) => {
-            // console.log(values)
+            console.log(values)
         await db.collection('productos').doc().set(values);
         console.log('Nueva tarea Agregada')
     }

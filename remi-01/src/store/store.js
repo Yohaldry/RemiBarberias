@@ -11,10 +11,8 @@ const reducers = combineReducers({
     login: loginReducer,
     register: registerReducer,
     user: userReducer
-
 })
- 
- 
+
 export const store = createStore(
     reducers,
     composeEnhancers( 

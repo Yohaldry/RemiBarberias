@@ -1349,3 +1349,138 @@
     margin-top: 5px;
     margin-left: 10px;
 }
+
+
+
+
+
+
+.PublicVacante{
+
+    font-family: 'Play', sans-serif;
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+    border: 3px solid rgb(255, 255, 255);
+    margin-left: 20px;
+    border-radius: 10px;
+    width: 250px;
+    list-style: none;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px;
+}
+
+.PublicVacante:hover{
+
+    background-color: #0033FF;
+    box-shadow: 0px 0px 10px 0px #0033FF;
+    border: 3px solid #0033FF;
+    color: white;
+}
+
+.containerModal{
+
+    width: 700px;
+    height: 400px;
+    margin-left: 100px;
+    margin-top: -550px;
+    background-color: #ffffff;
+    transition: 0.5s;
+    box-shadow: 0px 0px 20px 0px;
+    opacity: 0.9;
+    border-radius: 20px;
+}
+
+.VacanteTitle{
+
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    font-size: 40px;
+}
+
+#CamposVacante{
+
+    background-color: black;
+    width: 60%;
+    height: 30px;
+    margin-left: 20%;
+    margin-top: 2%;
+    padding-left: 15px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Play', sans-serif;
+    border-radius: 10px;
+}
+
+#DescripcionVacante{
+
+    background-color: black;
+    margin-left: 20%;
+    margin-top: 10px;
+    color: white;
+    font-family: 'Play', sans-serif;
+    padding-left: 15px;
+    border-radius: 10px;
+}
+
+.publicarVacante{
+
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    font-family: 'Play', sans-serif;
+    font-size: 20px;
+   margin-left: 200px;
+   background-color: rgb(255, 255, 255);
+   box-shadow: 0px 0px 5px 0px;
+   transition: 0.5s;
+   border: none;
+   cursor: pointer;
+}
+
+.publicarVacante:hover{
+
+   
+   background-color: rgb(13, 155, 0);
+  color: white;
+  border: none;
+}
+
+.CancelarVacante{
+
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    font-family: 'Play', sans-serif;
+    font-size: 20px;
+   margin-left: 30px;
+   background-color: rgb(165, 165, 165);
+   box-shadow: 0px 0px 5px 0px;
+   transition: 0.5s;
+   border: none;
+   cursor: pointer;
+}
+
+.CancelarVacante:hover{
+
+    background-color: rgb(155, 0, 0);
+    color: white;
+    border: none;
+}
+
+#BuscarEmpleo{
+
+    width: 80%;
+    height: 30px;
+    border-top: none;
+    border-right: none;
+    border-left: 4px solid #0033FF;
+    border-bottom: 4px solid #0033FF;
+    font-family: 'Play', sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: -100px;
+    padding-left: 15px;
+}
