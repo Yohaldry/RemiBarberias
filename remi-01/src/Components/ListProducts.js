@@ -10,8 +10,8 @@ const ListProducts = () => {
   console.log(productos);
   return (
       <div>
-          <h1>Lista de productos</h1>
-    <div className="produc">
+          {/* <h1>Lista de productos</h1> */}
+      <div className="produc">
 
       {productos ? (
         productos.map((pro, index) => (
