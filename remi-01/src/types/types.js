@@ -15,5 +15,10 @@
     editar: 'editar',
     eliminar: 'eliminar'
 }
+
+export const typesEmpleo = {
+    registrar: 'registar',
+    listEmpleo: 'listEmpleo',
+}
  
    
