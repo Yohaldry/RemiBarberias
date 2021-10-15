@@ -8,12 +8,12 @@ const ListEmpleo = () => {
     const { empleo } = useSelector((store) => store.empleos);
     console.log(empleo);
     return (
-        <div>
+        <div className="card-Empleo">
              {empleo ? (
         empleo.map((emp, index) => (
           <div className="card-pro" key={index}>
               <p>Establecimiento</p>
-            <h2>{emp.barberia}</h2><br></br>
+            <h2 className="NombreBarberEmpleo">{emp.barberia}</h2><br></br>
 
             <p>Profesión</p>
             <h3>{emp.nombre}</h3><br></br>
