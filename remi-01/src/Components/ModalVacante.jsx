@@ -33,7 +33,7 @@ const ModalVacante = () =>{
     <div>
       <div className="principal">
         <div className="secundario">
-      <Button className="PublicVacante" onClick={setAdd}>Publicar Vacante</Button>
+      <Button className="PublicVacante">Publicar Vacante</Button>
 
          </div>
       </div>
