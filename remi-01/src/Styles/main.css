@@ -1502,8 +1502,8 @@
     border-radius: 10px;
     padding: 7px 7px 7px 7px;
     height: 300px;
-    border-left: 4px solid #009118;
-    border-bottom: 4px solid #009118;
+    border-left: 4px solid red;
+    border-bottom: 4px solid red;
     transition: 0.5s;
     cursor: pointer;
     font-family: 'Play', sans-serif;
@@ -1511,8 +1511,6 @@
 
 .card-pro:hover{
 
-    /* border-top: 4px solid #000000;
-    border-right: 4px solid #000000; */
     background: linear-gradient(to bottom,  white, blue);
     border-left: none;
     border-bottom: none;
