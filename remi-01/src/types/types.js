@@ -8,5 +8,12 @@
  export const typesUser = {
      listar: 'listar'
  }
+
+ export const typesProduct = {
+    register: 'register',
+    list: 'list',
+    editar: 'editar',
+    eliminar: 'eliminar'
+}
  
    
