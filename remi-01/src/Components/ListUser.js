@@ -1,10 +1,15 @@
 import { useSelector, useDispatch } from "react-redux";
 import { listUserAsin } from "../actions/actionUser";
-import React, { useEffect } from "react";
+import React, { useEffect,useState } from "react";
 
-
+function searchTermUser(user){
+  return function(pro){
+    return pro.nombre.toLowerCase().includes(user)
+  }
+  }
 const ListUser = () => {
 
+  const [user,setUser] = useState("")
   const dispatch = useDispatch();
 
   const { users } = useSelector((store) => store.user);
@@ -18,6 +23,7 @@ const ListUser = () => {
   return (
     <div>
       <div id="Profesionales">
+      <input type="search" placeholder="Buscar"  onChange={e=>setUser(e.target.value)} />
         //{" "}
         <img
           className="Borde_Blue"
@@ -27,7 +33,7 @@ const ListUser = () => {
         // <h2 className="Red">La mayor red de profesionales de belleza</h2>
         //{" "}
         <div className="ContenidoPrincipal">
-          {users.map((us, index) => (
+          {users.filter(searchTermUser(user)).map((us, index) => (
             <div className="BarberiasYBarberos" key={index}>
               <img src={us.imagen} alt="img" />
               <h5>{us.nombre}</h5>
