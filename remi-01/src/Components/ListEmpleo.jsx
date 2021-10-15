@@ -1,16 +1,26 @@
 import { useSelector, useDispatch } from "react-redux";
 import {Button, Modal, ModalHeader, ModalBody, ModalFooter, FormGroup, Input, Label} from 'reactstrap';
 import React,{useState} from "react";
+
+function searchTermD(data){
+  return function(pro){
+    return pro.nombre.toLowerCase().includes(data)
+    || pro.sueldo.includes(data)
+  }
+  }
 const ListEmpleo = () => {
     const dispatch = useDispatch()
+
+    const [data,setData] = useState("")
     const [isOpenModal, setIsOpenModal] = useState(false);
 
     const { empleo } = useSelector((store) => store.empleos);
     console.log(empleo);
     return (
         <div>
+            <input type="search" placeholder="Buscar"  onChange={e=>setData(e.target.value)} />
              {empleo ? (
-        empleo.map((emp, index) => (
+        empleo.filter(searchTermD(data)).map((emp, index) => (
           <div className="card-pro" key={index}>
               <p>Establecimiento</p>
             <h2>{emp.establecimiento}</h2><br></br>

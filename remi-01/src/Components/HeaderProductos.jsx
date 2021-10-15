@@ -7,6 +7,11 @@ import { registerProductos } from "../actions/actionProducts";
 import { listProducA } from "../actions/actionProducts";
 import ListProducts from "./ListProducts";
 
+function searchTerm(busqueda){
+return function(x){
+  return x.nombre.toLowerCase().incluides(busqueda) || !busqueda
+}
+}
 const HeaderProductos = ({history}) => {
   const [busqueda, setBusqueda] = useState("")
   const dispatch = useDispatch();
@@ -58,9 +63,10 @@ const handleFileChanged = (e) => {
 
 const handleChange =(e)=> {
 setBusqueda(e.target.value);
-console.log('Busqueda '+e.target.value)
+console.log(e.target.value)
 
 }
+
 
   useEffect(() => {
     dispatch(listProducA());

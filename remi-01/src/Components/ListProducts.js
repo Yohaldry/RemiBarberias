@@ -1,9 +1,16 @@
 import { useSelector, useDispatch } from "react-redux";
 import {eliminarAsincrono} from '../actions/actionProducts'
-import React from "react";
+import React,{useState} from "react";
+
+function searchTerm(term){
+  return function(pro){
+    return pro.nombreProduct.toLowerCase().includes(term)
+  }
+  }
 
 const ListProducts = () => {
   const dispatch = useDispatch()
+  const [term,setTerm] = useState("")
 
   const { productos } = useSelector((store) => store.productos);
   console.log(productos);
@@ -11,9 +18,11 @@ const ListProducts = () => {
       <div>
           {/* <h1>Lista de productos</h1> */}
       <div className="produc">
+      <input type="search" placeholder="Buscar"  onChange={e=>setTerm(e.target.value)} />
+          <p>Buscar por nombre del producto</p>
 
       {productos ? (
-        productos.map((pro, index) => (
+        productos.filter(searchTerm(term)).map((pro, index) => (
           <div className="card-pro" key={index}>
 
             <h2>{pro.nombre}</h2>
@@ -31,6 +40,7 @@ const ListProducts = () => {
         
       )}
     </div>
+
     </div>
   );
 };
