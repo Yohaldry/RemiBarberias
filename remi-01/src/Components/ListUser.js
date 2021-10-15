@@ -22,8 +22,9 @@ const ListUser = () => {
   
   return (
     <div>
-      <div id="Profesionales">
       <input type="search" placeholder="Buscar"  onChange={e=>setUser(e.target.value)} />
+      <div id="Profesionales">
+
         //{" "}
         <img
           className="Borde_Blue"
