@@ -8,6 +8,7 @@ import { listProducA } from "../actions/actionProducts";
 import ListProducts from "./ListProducts";
 
 const HeaderProductos = ({history}) => {
+  const [busqueda, setBusqueda] = useState("")
   const dispatch = useDispatch();
 
   const [add, setAdd] = useState(false);
@@ -55,6 +56,12 @@ const handleFileChanged = (e) => {
    })
 }
 
+const handleChange =(e)=> {
+setBusqueda(e.target.value);
+console.log('Busqueda '+e.target.value)
+
+}
+
   useEffect(() => {
     dispatch(listProducA());
   }, [dispatch]);
@@ -72,7 +79,7 @@ const handleFileChanged = (e) => {
         <div className="PanelCRUD">
           <h1>Panel de Busqueda</h1>
 
-          <input type="search" placeholder="Buscar" />
+          <input type="search" placeholder="Buscar"  value={busqueda} onChange={handleChange} />
           <p>Buscar por nombre del producto</p>
           <br />
           <button
