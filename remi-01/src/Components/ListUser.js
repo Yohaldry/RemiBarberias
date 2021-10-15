@@ -22,7 +22,7 @@ const ListUser = () => {
   
   return (
     <div>
-      <input type="search" placeholder="Buscar"  onChange={e=>setUser(e.target.value)} />
+      <input id="BuscarUser" type="search" placeholder="Buscar"  onChange={e=>setUser(e.target.value)} />
       <div id="Profesionales">
 
         //{" "}
