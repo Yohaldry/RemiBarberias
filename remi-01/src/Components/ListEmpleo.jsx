@@ -29,7 +29,7 @@ const ListEmpleo = () => {
             </div>
         ))
       ) : (
-        <p>Los Datos No Estan Disponibles</p>
+        <p className="BuscandoEmpleos">Los Datos No Estan Disponibles</p>
         
       )}
             

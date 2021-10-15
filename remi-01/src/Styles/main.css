@@ -1536,3 +1536,9 @@
 .NombreBarberEmpleo{
     color: #0033FF;
 }
+
+.BuscandoEmpleos{
+
+    font-family: 'Play', sans-serif;
+    font-size: 40px;
+}

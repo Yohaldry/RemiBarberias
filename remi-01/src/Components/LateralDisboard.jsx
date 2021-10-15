@@ -9,7 +9,6 @@ const LateralDisboard = () => {
     const [componente, setComponente] = useState(false)
 
 
-
     return (
         <Fragment>
         <div className="Abaut_Lateral">

@@ -30,7 +30,11 @@ const ModalVacante = () =>{
     reset();
   };
   return(
+
+    
     <div>
+
+      
       <div className="principal">
         <div className="secundario">
       <Button className="PublicVacante">Publicar Vacante</Button>
