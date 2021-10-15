@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react'
-import {listProducA} from '../actions/actionEmpleos'
+import {listEmpleoA} from '../actions/actionEmpleos'
 import { useDispatch } from "react-redux";
 import { Link } from 'react-router-dom'
 import ListEmpleo from '../Components/ListEmpleo'
@@ -7,7 +7,7 @@ import ListEmpleo from '../Components/ListEmpleo'
 const EmpleoLateral = () => {
     const dispatch = useDispatch();
     useEffect(() => {
-        dispatch(listProducA());
+        dispatch(listEmpleoA());
       }, [dispatch]);
     return (
         <div>

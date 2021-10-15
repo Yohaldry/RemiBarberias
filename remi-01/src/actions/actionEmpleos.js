@@ -1,16 +1,17 @@
 import { typesEmpleo } from "../types/types";
 import { db } from "../firebase/firebaseConfig";
 import { addDoc,collection,deleteDoc,doc,getDocs,query,where} from "@firebase/firestore";
-import Swal from 'sweetalert2'
 
-export const registrarEmpleosA = ( barberia, nombre,experiencia,sueldo,contrato) =>{
+export const registrarEmpleosA = ( establecimiento, nombre,experiencia,sueldo,contrato,contacto,descripcion) =>{
     return(dispatch)=>{
         const newEmpleo = {
-            barberia,
+            establecimiento,
              nombre,
              experiencia,
              sueldo,
-             contrato
+             contrato,
+             contacto,
+             descripcion
         }
         addDoc(collection(db,"empleos"), newEmpleo)
         .then(res => {
@@ -28,7 +29,7 @@ export const registrarEmpleoS = (empleo) => {
     }
 }
 
-export const listProducA = () =>{
+export const listEmpleoA = () =>{
     return async(dispatch)=>{
       const datos = await getDocs(collection(db,"empleos"))
       const dtEmpleos = []

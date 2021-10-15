@@ -25,7 +25,13 @@ const ListEmpleo = () => {
             <p> {emp.sueldo}</p><br></br>
 
             <p>Contrato</p>
-            <p>{emp.contrato}</p>
+            <p>{emp.contrato}</p><br></br>
+
+            <p>Contacto</p>
+            <p>{emp.contacto}</p><br></br>
+            
+            <p>Descripción</p>
+            <p>{emp.descripcion}</p>
             </div>
         ))
       ) : (
