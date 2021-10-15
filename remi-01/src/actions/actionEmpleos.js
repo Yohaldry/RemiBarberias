@@ -3,7 +3,7 @@ import { db } from "../firebase/firebaseConfig";
 import { addDoc,collection,deleteDoc,doc,getDocs,query,where} from "@firebase/firestore";
 import Swal from 'sweetalert2'
 
-export const registrarEmpleos = ( barberia, nombre,experiencia,sueldo,contrato) =>{
+export const registrarEmpleosA = ( barberia, nombre,experiencia,sueldo,contrato) =>{
     return(dispatch)=>{
         const newEmpleo = {
             barberia,

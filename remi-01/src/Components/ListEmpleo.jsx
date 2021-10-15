@@ -12,11 +12,19 @@ const ListEmpleo = () => {
              {empleo ? (
         empleo.map((emp, index) => (
           <div className="card-pro" key={index}>
+              <p>Establecimiento</p>
+            <h2>{emp.barberia}</h2><br></br>
 
-            <h1>{emp.barberia}</h1>
-            <h3>{emp.nombre}</h3>
-            <p>{emp.experiencia}</p>
-            <p> {emp.sueldo}</p>
+            <p>Profesión</p>
+            <h3>{emp.nombre}</h3><br></br>
+
+            <p>Experiencia</p>
+            <p>{emp.experiencia}</p><br></br>
+
+            <p>Sueldo</p>
+            <p> {emp.sueldo}</p><br></br>
+
+            <p>Contrato</p>
             <p>{emp.contrato}</p>
             </div>
         ))

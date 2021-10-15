@@ -1501,3 +1501,7 @@
     border:1px solid black;
     box-shadow:2px 4px 4px 8px lightgray;
 }
+
+.container-empleo{
+    margin-left: 20rem;
+}

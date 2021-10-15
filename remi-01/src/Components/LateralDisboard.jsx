@@ -1,7 +1,7 @@
 import React, {Fragment, useState} from 'react'
 import { Link } from 'react-router-dom'
 import AgendasActivas from './AgendasActivas'
-import ModalVcante from '../Components/ModalVacante'
+import ModalVacante from '../Components/ModalVacante'
 import Perfil from './Perfil'
 
 const LateralDisboard = () => {
@@ -19,7 +19,7 @@ const LateralDisboard = () => {
             <ul>
                 <li onClick={() => {setComponente(false)}}>Agendas Activas</li>
                 <li onClick={() => {setComponente(true)}}>Perfil</li>
-                <ModalVcante />
+                <ModalVacante />
                 <Link to="/"><li>Salir</li></Link>
             </ul>
             
