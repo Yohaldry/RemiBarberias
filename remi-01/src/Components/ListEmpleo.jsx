@@ -2,22 +2,19 @@ import { useSelector, useDispatch } from "react-redux";
 import {Button, Modal, ModalHeader, ModalBody, ModalFooter, FormGroup, Input, Label} from 'reactstrap';
 import React,{useState} from "react";
 const ListEmpleo = () => {
+
     const dispatch = useDispatch()
     const [isOpenModal, setIsOpenModal] = useState(false);
 
     const { empleo } = useSelector((store) => store.empleos);
     console.log(empleo);
     return (
-        <div className="card-Empleo">
+        <div>
              {empleo ? (
         empleo.map((emp, index) => (
           <div className="card-pro" key={index}>
               <p>Establecimiento</p>
-<<<<<<< HEAD
-            <h2>{emp.establecimiento}</h2><br></br>
-=======
-            <h2 className="NombreBarberEmpleo">{emp.barberia}</h2><br></br>
->>>>>>> 579cab08fb2aa21249df6e706a168354e86378c2
+            <h2 className="NombreBarberEmpleo">{emp.establecimiento}</h2><br></br>
 
             <p>Profesión</p>
             <h3>{emp.nombre}</h3><br></br>
@@ -60,7 +57,7 @@ const ListEmpleo = () => {
             </div>
         ))
       ) : (
-        <p className="BuscandoEmpleos">Los Datos No Estan Disponibles</p>
+        <p>Los Datos No Estan Disponibles</p>
         
       )}
        
