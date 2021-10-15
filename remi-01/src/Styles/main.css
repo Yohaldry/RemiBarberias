@@ -1262,7 +1262,7 @@
     height: 614px;
     background-color: rgb(255, 255, 255);
     box-shadow: -10px -10px 40px -10px;
-    margin-top: 80px;
+    margin-top: -15px;
     position: fixed;
 }
 
@@ -1488,7 +1488,7 @@
 .produc{
     display: flex;
     flex-direction: row;
-    margin-left: 40rem;
+    margin-left: 30rem;
     margin-top: 6rem;
 }
 .card-pro{
@@ -1505,7 +1505,6 @@
     border-left: 4px solid red;
     border-bottom: 4px solid red;
     transition: 0.5s;
-    cursor: pointer;
     font-family: 'Play', sans-serif;
 }
 
@@ -1516,6 +1515,19 @@
     border-bottom: none;
     transform: translate(-30px);
     box-shadow:0px 0px 30px 0px rgb(0, 0, 0);
+}
+.EliminarProducto{
+
+    width: 70%;
+    height: 30px;
+    background-color: rgb(107, 0, 0);
+    margin-top: 50px;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Play', sans-serif;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 15px;
 }
 
 .container-empleo{
@@ -1541,4 +1553,32 @@
 
     font-family: 'Play', sans-serif;
     font-size: 40px;
+}
+
+.ProductosDisponible{
+
+    margin-left: -10;
+}
+
+.headerPrincipal h1{
+
+    margin-left: -150px;
+}
+
+.card-pro h2{
+
+    font-size: 18px;
+    color: #00d824;
+}
+
+.ContactarAlVendedor{
+
+    background-color: #00d824;
+    width: 70%;
+    height: 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    font-family: 'Play', sans-serif;
+    cursor: pointer;
+    font-size: 15px;
 }

@@ -13,6 +13,7 @@ import { AuthRouter } from "./AuthRouter";
 import {  getAuth,onAuthStateChanged } from "firebase/auth";
 import UsuarioConsumidor from '../Containers/UsuarioConsumidor'
 import Desboard from "../Containers/Desboard";
+import WorkZone from '../Containers/WorkZone'
 import ProductosLinea from "../Containers/ProductosLinea";
 import Empleos from "../Containers/Empleos";
 
@@ -59,8 +60,8 @@ export default function AppRouter() {
                     />
                      <PrivateRoute
                         exact
-                        path="/perfil"
-                        component={Desboard}
+                        path="/workzone"
+                        component={WorkZone}
                         isAuthenticated ={isLooggedIn}
                     />
                     <PrivateRoute

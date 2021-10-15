@@ -65,10 +65,10 @@ const handleFileChanged = (e) => {
         <Link to="/" className="MenuDesplegables">
           <i class="fas fa-angle-left"></i>
         </Link>
-        <h1>Productos Disponibles</h1>
+        <h1 className="ProductosDisponible">Productos Disponibles</h1>
       </div>
 
-      <div className="panelesProductos">
+      <div>
         <div className="PanelCRUD">
           <h1>Panel de Busqueda</h1>
 
@@ -136,6 +136,8 @@ const handleFileChanged = (e) => {
                   placeholder="Descripcion"
                   value={descripcion}
                   onChange={handleInputChange}
+                  maxlength="50"
+                  minlength="5"
                 />
                 <input
                   type="number"

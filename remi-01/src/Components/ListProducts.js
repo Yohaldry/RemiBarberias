@@ -1,5 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
 import {eliminarAsincrono} from '../actions/actionProducts'
+import {Link} from 'react-router-dom'
 import React from "react";
 
 const ListProducts = () => {
@@ -16,14 +17,15 @@ const ListProducts = () => {
         productos.map((pro, index) => (
           <div className="card-pro" key={index}>
 
-            <h2>{pro.nombre}</h2>
-            <h2>{pro.nombreProduct}</h2>
-            <img width="100px" src={pro.imagen} alt="im" />
-            <h3>{pro.precio}</h3>
-            <h3> {pro.descripcion}</h3>
+            <h1>{pro.nombreProduct}</h1>
+            <h2>Vendedor: {pro.nombre}</h2>
+            <img width="100px" src={pro.imagen1} alt="im" />
+            <h3>Precio: {pro.precio}</h3>
+            <h3> Descripcion: {pro.descripcion}</h3>
 
             {/* <td onClick={()=>dispatch(editarAsincrono)}><button className="editar">Editar</button></td> */}
-            <button onClick={()=>dispatch(eliminarAsincrono(pro.nombre))} className="eliminar">Eliminar</button>
+            <button className="ContactarAlVendedor"><i class="fab fa-whatsapp"></i> Contactar al vendedor</button>
+            <button className="EliminarProducto" onClick={()=>dispatch(eliminarAsincrono(pro.nombre))} >Eliminar</button>
             </div>
         ))
       ) : (

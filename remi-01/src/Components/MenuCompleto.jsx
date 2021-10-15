@@ -17,7 +17,7 @@ const MenuCompleto = () => {
                         <a href="#Inicio">Inicio</a>
                         <li>Perfil</li>
                         <Link to="/empleo">Empleo Disponible</Link>
-                        <li><Link to="/perfil">Soy Aliado</Link></li>
+                        <li><Link to="/workzone">Soy Aliado</Link></li>
                         <a href="#footerInicio">Redes Sociales</a>
                         <li>Donaciones</li>
                         <Link to="/productos">Productos en Linea</Link><br/>
