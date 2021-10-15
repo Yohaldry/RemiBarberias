@@ -17,8 +17,8 @@ const ListEmpleo = () => {
     const { empleo } = useSelector((store) => store.empleos);
     console.log(empleo);
     return (
-        <div>
-            <input type="search" placeholder="Buscar"  onChange={e=>setData(e.target.value)} />
+        <div className="vacantesTotal">
+            <input id="BuscarVacante" type="search" placeholder="Buscar"  onChange={e=>setData(e.target.value)} />
              {empleo ? (
         empleo.filter(searchTermD(data)).map((emp, index) => (
           <div className="card-pro" key={index}>

@@ -1507,6 +1507,27 @@
     font-family: 'Play', sans-serif;
 }
 
+.card-pro button{
+    
+    width: 70%;
+    border-radius: 10px;
+    font-family: 'Play', sans-serif;
+    border: none;
+    font-size: 20px;
+    margin-top: 70px;
+    height: 30px;
+    background-color: rgb(160, 1, 1);
+    cursor: pointer;
+    color: white;
+}
+
+.vacantesTotal{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+}
+
 .card-pro h2{
 
     color: green;
@@ -1593,4 +1614,21 @@
     background-color: rgb(0, 16, 136);
     margin-top: 10px;
    width: 300px;
+}
+
+#BuscarVacante{
+
+    width: 17%;
+    height: 38px;
+    font-size: 20px;
+    margin-left: -300px;
+    margin-top: 280px;
+    z-index: 1;
+    border-radius: 5px;
+    border-bottom: 3px solid #008b13;
+    border-left: 3px solid #008b13;
+    border-top: none;
+    border-right: none;
+    position: fixed;
+    font-family: 'Play', sans-serif;
 }
