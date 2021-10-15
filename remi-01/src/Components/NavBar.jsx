@@ -22,7 +22,7 @@ const NavBar = () => {
                 <button className="BotonBuscar"><i class="fas fa-search"></i></button>
               
             </div>
-
+ 
             <div className="Imagen_bienvenida">
                    <a id="solicitar" href="#Profesionales"><i class="fas fa-arrow-down"></i> Solicitar Servicios</a>
                     { 

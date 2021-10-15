@@ -13,7 +13,7 @@ const PintarUser = () => {
   return (
     <div className="pros">
       {user ? (
-        user.map((pr, index) => (
+        user.map((pr, index) => ( 
           <div  key={index}>
             <div className="card">
             <img className="img-grande" src={pr.imagen} alt="im" />

@@ -12,6 +12,6 @@ const Cobertura = () => {
                 </div>
             </div>
     )
-}
+} 
 
 export default Cobertura

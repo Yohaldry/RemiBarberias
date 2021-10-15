@@ -16,7 +16,7 @@ const AppEntrada = () => {
             <Registro /> 
             <Aliados />
             <Cobertura />
-        </div>
+        </div> 
     )
 } 
 

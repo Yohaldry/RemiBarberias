@@ -10,7 +10,7 @@ const Aliados = () => {
                 <ul>
                     <h2>Barberos Independientes</h2>
                     <li>Sistema de control</li>
-                    <li>Agendamientos de citas</li>
+                     <li>Agendamientos de citas</li>
                     <li>Perfil Profesional</li>
                     <li>Vista ante toda nuestra red de clientes</li>
                     <li>Cubrir tu zona o si tienes vehiculo,<br/> puedes cubrir la ciudad</li>

@@ -13,7 +13,7 @@ const Perfil = () => {
             <img src={image} alt="" />
          <div className="Caracteristicas_Perfil">
                  <h1>{name}</h1>
-                 <h2>{email}</h2>
+                 <h2>{email}</h2> 
                  <h3>Direccion: Carrera 57a #5b-18</h3>
            </div>
         

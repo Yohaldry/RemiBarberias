@@ -2,7 +2,7 @@ import React from 'react'
 
 const Burbujas = () => {
     return (
-     
+      
         <main className="bg_animate">
         <div className="header_nav">
  

@@ -22,7 +22,7 @@ const LateralDisboard = () => {
                 <ModalVacante />
                 <Link to="/"><li>Salir</li></Link>
             </ul>
-            
+             
             
         </div>
         {

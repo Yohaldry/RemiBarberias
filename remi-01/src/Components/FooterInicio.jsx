@@ -20,7 +20,7 @@ export const FooterInicio = () => {
                      de Conectar un cliente con un Barbero  Independiente <br/>
                      o Barbería</p>
             </div>
-
+ 
             <div className="infoFooterInicio">
                 <h2>Siguenos en nuestras redes Sociales</h2>
                 <hr /><br/>

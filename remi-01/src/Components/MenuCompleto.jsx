@@ -11,7 +11,7 @@ const MenuCompleto = () => {
         };
 
     return ( 
-            
+             
             <div className="MenuCompleto">
                     <ul>
                         <a href="#Inicio">Inicio</a>

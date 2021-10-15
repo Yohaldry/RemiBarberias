@@ -23,7 +23,7 @@ const ListProducts = () => {
       {productos ? (
         productos.filter(searchTerm(term)).map((pro, index) => (
           <div className="card-pro" key={index}>
-
+ 
             <h1>{pro.nombreProduct}</h1>
             <img width="100px" src={pro.imagen} alt="im" />
             <h2>Vendedor: {pro.nombre}</h2>

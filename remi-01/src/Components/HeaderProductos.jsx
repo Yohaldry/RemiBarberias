@@ -132,7 +132,7 @@ const handleFileChanged = (e) => {
                   minlength="5"
                 />
                 <input
-                  type="number"
+                  type="number" 
                   name="precio"
                   placeholder="Precio"
                   value={precio}

@@ -45,7 +45,7 @@ const Registro = () => {
 
 
 
-    return (
+    return ( 
         <div>
         
     <form id="registro-form" onSubmit={handleRegistro}>

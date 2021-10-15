@@ -5,11 +5,11 @@ import NavBar from '../Components/NavBar'
 const UsuarioConsumidor = () => {
     return (
         <div>
-            <NavBar />
+            <NavBar /> 
             <FooterInicio />
         </div>
     )
 }
  
 export default UsuarioConsumidor
-   
+    

@@ -28,7 +28,7 @@ const ListEmpleo = () => {
             <p>Profesión</p>
             <h3>{emp.nombre}</h3><br></br>
 
-            <p>Sueldo</p>
+            <p>Sueldo</p> 
             <p> {emp.sueldo}</p><br></br>
 
             <button onClick={()=>setIsOpenModal(true)}>Ver más detalles</button>

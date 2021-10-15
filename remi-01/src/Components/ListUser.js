@@ -45,7 +45,7 @@ const ListUser = () => {
                 <li>{us.direccion}</li>
               </ul>
             </div>
-          ))}
+          ))} 
         </div>
       </div>
     </div>

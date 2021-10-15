@@ -35,7 +35,7 @@ const AgendasActivas = () => {
          <td>Corte + Barba</td>
          <td>08/10/21</td>
          <td>14:30</td>
-         <td>Yohaldry Quintero</td>
+         <td>Yohaldry Quintero</td> 
          <td>3223908903</td>
          <td>18000</td>
  </tr>
