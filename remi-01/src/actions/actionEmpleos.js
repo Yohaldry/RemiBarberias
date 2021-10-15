@@ -29,7 +29,7 @@ export const registrarEmpleoS = (empleo) => {
     }
 }
 
-export const listProducA = () =>{
+export const listEmpleoA = () =>{
     return async(dispatch)=>{
       const datos = await getDocs(collection(db,"empleos"))
       const dtEmpleos = []

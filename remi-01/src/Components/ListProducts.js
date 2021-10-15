@@ -19,9 +19,7 @@ const ListProducts = () => {
 
             <h2>{pro.nombre}</h2>
             <h2>{pro.nombreProduct}</h2>
-            <img width="100px" src={pro.imagen1} alt="im" />
-            <img src={pro.imagen2} alt="im" />
-            <img src={pro.imagen3} alt="im" />
+            <img width="100px" src={pro.imagen} alt="im" />
             <h3>{pro.precio}</h3>
             <h3> {pro.descripcion}</h3>
 

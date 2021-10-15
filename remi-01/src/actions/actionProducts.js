@@ -4,14 +4,12 @@ import { addDoc,collection,deleteDoc,doc,getDocs,query,where} from "@firebase/fi
 import Swal from 'sweetalert2'
 
 
-export const registerProductos = ( nombreProduct,nombre,imagen1,imagen2,imagen3,descripcion,precio) =>{
+export const registerProductos = ( nombreProduct,nombre,imagen,descripcion,precio) =>{
     return(dispatch)=>{
         const newProduct = {
             nombreProduct,
             nombre,
-            imagen1,
-            imagen2,
-            imagen3,
+            imagen,
             descripcion,
             precio
         }
