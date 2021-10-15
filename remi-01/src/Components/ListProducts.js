@@ -18,21 +18,22 @@ const ListProducts = () => {
       <div>
           {/* <h1>Lista de productos</h1> */}
       <div className="produc">
-      <input type="search" placeholder="Buscar"  onChange={e=>setTerm(e.target.value)} />
-          <p>Buscar por nombre del producto</p>
+      <input type="search" id="BuscarProducts" placeholder="Buscar"  onChange={e=>setTerm(e.target.value)} />
 
       {productos ? (
         productos.filter(searchTerm(term)).map((pro, index) => (
           <div className="card-pro" key={index}>
 
-            <h2>{pro.nombre}</h2>
-            <h2>{pro.nombreProduct}</h2>
+            <h1>{pro.nombreProduct}</h1>
             <img width="100px" src={pro.imagen} alt="im" />
-            <h3>{pro.precio}</h3>
-            <h3> {pro.descripcion}</h3>
+            <h2>Vendedor: {pro.nombre}</h2>
+            
+            <h3>$: {pro.precio}</h3>
+            <p>Descripcion {pro.descripcion}</p>
 
             {/* <td onClick={()=>dispatch(editarAsincrono)}><button className="editar">Editar</button></td> */}
-            <button onClick={()=>dispatch(eliminarAsincrono(pro.nombre))} className="eliminar">Eliminar</button>
+            <button onClick={()=>dispatch(eliminarAsincrono(pro.nombre))} className="eliminarProducto">Eliminar</button>
+           <button className="ContactarProducto"><i class="fab fa-whatsapp"></i>  Contactar al Cliente</button>
             </div>
         ))
       ) : (

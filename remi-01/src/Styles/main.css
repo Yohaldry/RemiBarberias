@@ -1262,7 +1262,7 @@
     height: 614px;
     background-color: rgb(255, 255, 255);
     box-shadow: -10px -10px 40px -10px;
-    margin-top: 80px;
+    margin-top: -15px;
     position: fixed;
 }
 
@@ -1270,6 +1270,7 @@
 
     font-family: 'Play', sans-serif;
     text-align: center;
+    margin-bottom: 60px;
 
 }
 
@@ -1493,15 +1494,103 @@
 }
 .card-pro{
     margin-left: 2rem;
+    padding: 7px 7px 7px 7px;
     display: flex;
     flex-direction:column;
     align-items:center;
     width: 300px;
     height: 300px;
-    border:1px solid black;
-    box-shadow:2px 4px 4px 8px lightgray;
+    border-radius: 10px;
+    border-left:4px solid green;
+    box-shadow:2px 4px 20px 8px lightgray;
+    transition: 0.5s;
+    font-family: 'Play', sans-serif;
+}
+
+.card-pro h2{
+
+    color: green;
+    font-size: 18px;
+    font-family: 'Play', sans-serif;
+    margin-top: 30px;
+}
+
+.eliminarProducto{
+
+    width: 70%;
+    border-radius: 10px;
+    font-family: 'Play', sans-serif;
+    border: none;
+    font-size: 20px;
+    margin-top: 70px;
+    height: 30px;
+    background-color: rgb(160, 1, 1);
+    cursor: pointer;
+    color: white;
+}
+
+.ContactarProducto{
+
+    width: 70%;
+    border-radius: 10px;
+    font-family: 'Play', sans-serif;
+    border: none;
+    font-size: 18px;
+    margin-top: 10px;
+    height: 30px;
+    background-color: rgb(0, 138, 30);
+    cursor: pointer;
+    color: white;
+}
+
+.card-pro p{
+
+    font-size: 15px;
+}
+
+.card-pro:hover{
+
+    transition: 0.5s;
+    border-left:none;
+    background: linear-gradient(to bottom,  white, blue);
 }
 
 .container-empleo{
     margin-left: 20rem;
+}
+
+#BuscarProducts{
+
+    width: 23%;
+    height: 38px;
+    font-size: 20px;
+    margin-left: -430px;
+    margin-top: 50px;
+    z-index: 1;
+    border-radius: 5px;
+    border-bottom: 3px solid #008b13;
+    border-left: 3px solid #008b13;
+    border-top: none;
+    border-right: none;
+    position: fixed;
+    font-family: 'Play', sans-serif;
+}
+
+.produc{
+
+    margin-left: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.SubirfotoProducto{
+
+    background-color: rgb(0, 136, 0);
+}
+
+#SubirFoto{
+
+    background-color: rgb(0, 16, 136);
+    margin-top: 10px;
+   width: 300px;
 }

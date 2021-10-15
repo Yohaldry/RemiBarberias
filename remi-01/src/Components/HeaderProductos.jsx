@@ -7,13 +7,7 @@ import { registerProductos } from "../actions/actionProducts";
 import { listProducA } from "../actions/actionProducts";
 import ListProducts from "./ListProducts";
 
-function searchTerm(busqueda){
-return function(x){
-  return x.nombre.toLowerCase().incluides(busqueda) || !busqueda
-}
-}
 const HeaderProductos = ({history}) => {
-  const [busqueda, setBusqueda] = useState("")
   const dispatch = useDispatch();
 
   const [add, setAdd] = useState(false);
@@ -61,13 +55,6 @@ const handleFileChanged = (e) => {
    })
 }
 
-const handleChange =(e)=> {
-setBusqueda(e.target.value);
-console.log(e.target.value)
-
-}
-
-
   useEffect(() => {
     dispatch(listProducA());
   }, [dispatch]);
@@ -81,12 +68,11 @@ console.log(e.target.value)
         <h1>Productos Disponibles</h1>
       </div>
 
-      <div className="panelesProductos">
+      <div>
         <div className="PanelCRUD">
           <h1>Panel de Busqueda</h1>
 
-          <input type="search" placeholder="Buscar"  value={busqueda} onChange={handleChange} />
-          <p>Buscar por nombre del producto</p>
+          
           <br />
           <button
             onClick={() => {
@@ -125,13 +111,6 @@ console.log(e.target.value)
                   value={nombre}
                   onChange={handleInputChange}
                 />
-                 <input
-                  type="text"
-                  name="nombre"
-                  placeholder="link de la imagen del producto"
-                  value={imagen}
-                  onChange={handleInputChange}
-                />
                 <input
                   id="fileSelector"
                   type="file"
@@ -140,15 +119,17 @@ console.log(e.target.value)
                   onChange={handleFileChanged}
                   placeholder="Imagen #1"
                 />
-                  <button className="btn-imagen"
-                           onClick={handlePictureClick} type="button">Imagen</button>
+                  
                
                 <input
                   type="text"
                   name="descripcion"
                   placeholder="Descripcion"
                   value={descripcion}
+                  maxLength="50"
                   onChange={handleInputChange}
+                  maxlength="50"
+                  minlength="5"
                 />
                 <input
                   type="number"
@@ -157,6 +138,8 @@ console.log(e.target.value)
                   value={precio}
                   onChange={handleInputChange}
                 />
+                <button id="SubirFoto"
+                           onClick={handlePictureClick} type="button"><i class="fas fa-images"></i>  Subir Imagen</button>
               </form>
             </div>
           ) : (
