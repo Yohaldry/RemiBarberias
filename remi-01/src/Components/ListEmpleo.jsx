@@ -8,12 +8,16 @@ const ListEmpleo = () => {
     const { empleo } = useSelector((store) => store.empleos);
     console.log(empleo);
     return (
-        <div>
+        <div className="card-Empleo">
              {empleo ? (
         empleo.map((emp, index) => (
           <div className="card-pro" key={index}>
               <p>Establecimiento</p>
+<<<<<<< HEAD
             <h2>{emp.establecimiento}</h2><br></br>
+=======
+            <h2 className="NombreBarberEmpleo">{emp.barberia}</h2><br></br>
+>>>>>>> 579cab08fb2aa21249df6e706a168354e86378c2
 
             <p>Profesión</p>
             <h3>{emp.nombre}</h3><br></br>
@@ -56,7 +60,7 @@ const ListEmpleo = () => {
             </div>
         ))
       ) : (
-        <p>Los Datos No Estan Disponibles</p>
+        <p className="BuscandoEmpleos">Los Datos No Estan Disponibles</p>
         
       )}
        
