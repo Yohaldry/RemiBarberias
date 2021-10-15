@@ -12,20 +12,22 @@ import {Button, Modal, ModalHeader, ModalBody, ModalFooter, FormGroup, Input, La
 const ModalVacante = () =>{
   const dispatch = useDispatch();
 
-  const [isModalOpen, setisModalOpen] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
 
   const [values, handleInputChange, reset] = useForm({
-    barberia: "",
+    establecimiento: "",
     nombre: "",
     experiencia: "",
     sueldo: "",
     contrato: "",
+    contacto: "",
+    descripcion: ""
   });
 
-  let {  barberia,nombre,experiencia,sueldo,contrato } = values;
+  let {  establecimiento, nombre,experiencia,sueldo,contrato,contacto,descripcion } = values;
   const handleRegistro = (e) => {
     e.preventDefault();
-    dispatch(registrarEmpleosA(barberia,nombre,experiencia,sueldo,contrato)
+    dispatch(registrarEmpleosA(establecimiento,nombre,experiencia,sueldo,contrato,contacto,descripcion)
     );
     reset();
   };
@@ -33,10 +35,57 @@ const ModalVacante = () =>{
     <div>
       <div className="principal">
         <div className="secundario">
-      <Button className="PublicVacante" onClick={setAdd}>Publicar Vacante</Button>
-
-         </div>
+      <button className="PublicVacante" onClick={()=>setOpenModal(true)}>Publicar Vacante</button>
+       </div>
       </div>
+      <Modal isOpen={openModal}>
+        <ModalHeader>
+          Iniciar Sesión
+        </ModalHeader>
+        <ModalBody>
+
+          <form onSubmit={handleRegistro}>
+        <div className="containerModal">
+        <h1 className="VacanteTitle">Vacante Disponible</h1>
+          <FormGroup>
+                     <input type="text" id="CamposVacante" name="establecimiento" placeholder="Nombre del Establecimiento" value={establecimiento}
+                    onChange={handleInputChange}  /> 
+          </FormGroup>
+          <FormGroup>
+                     <input type="text" id="CamposVacante" name="nombre" placeholder="Nombre de la profesión" value={nombre}
+                    onChange={handleInputChange}  /> 
+          </FormGroup>
+          <FormGroup>
+                     <input type="text" id="CamposVacante" name="experiencia" placeholder="Experiencia Requerida" value={experiencia}
+                    onChange={handleInputChange}  /> 
+          </FormGroup>
+          <FormGroup>
+                     <input type="text" id="CamposVacante" name="sueldo" placeholder="Sueldo" value={sueldo}
+                    onChange={handleInputChange}  /> 
+          </FormGroup>
+          <FormGroup>
+                    <input type="text" id="CamposVacante" name="contrato" placeholder="Contrato" value={contrato}
+                    onChange={handleInputChange} /> 
+          </FormGroup>
+          <FormGroup>
+                     <input type="number" id="CamposVacante" name="contacto" placeholder="Contacto"  value={contacto}
+                    onChange={handleInputChange} /> 
+          
+          </FormGroup>
+          <FormGroup>
+                     <textarea type="text" id="CamposVacante" name="descripcion" placeholder="Descripción de la Vacante" value={descripcion}
+                    onChange={handleInputChange}  />  
+          
+          </FormGroup>
+          <FormGroup>
+            <button type="submit" className="publicarVacante" >Pubicar</button>
+            <button className="CancelarVacante" onClick={()=>setOpenModal(false)}>Cancelar</button>
+          </FormGroup>
+          </div>
+          </form>
+        </ModalBody>
+
+      </Modal>
     </div>
   )
 }
