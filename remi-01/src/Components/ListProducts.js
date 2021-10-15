@@ -1,6 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
 import {eliminarAsincrono} from '../actions/actionProducts'
-import {Link} from 'react-router-dom'
 import React from "react";
 
 const ListProducts = () => {
