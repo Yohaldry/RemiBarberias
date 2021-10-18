@@ -17,6 +17,7 @@ const HeaderProductos = ({history}) => {
     imagen: "",
     descripcion: "",
     precio: "",
+    telefono: ""
   });
 
   let {
@@ -25,6 +26,7 @@ const HeaderProductos = ({history}) => {
     imagen,
     descripcion,
     precio,
+    telefono
   } = values;
   const handleRegistro = (e) => {
     e.preventDefault();
@@ -34,7 +36,8 @@ const HeaderProductos = ({history}) => {
         nombre,
         imagen,
         descripcion,
-        precio
+        precio,
+        telefono
       )
     );
     reset();
@@ -136,6 +139,13 @@ const handleFileChanged = (e) => {
                   name="precio"
                   placeholder="Precio"
                   value={precio}
+                  onChange={handleInputChange}
+                />
+                <input
+                  type="number" 
+                  name="telefono"
+                  placeholder="Numero de telefono"
+                  value={telefono}
                   onChange={handleInputChange}
                 />
                 <button id="SubirFoto"
