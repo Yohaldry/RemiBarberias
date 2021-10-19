@@ -1,6 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { listUserAsin } from "../actions/actionUser";
-import React, { useEffect,useState } from "react";
+import React, { useEffect, useState } from "react";
+import FromularioAgenda from "./FromularioAgenda";
 
 function searchTermUser(user){
   return function(pro){
@@ -19,14 +20,32 @@ const ListUser = () => {
     dispatch(listUserAsin());
   }, [dispatch]);
 
+  const [citar, setCitar] = useState(false)
   
   return (
     <div>
+      {
+
+      citar ? (
+        <div>
+              <FromularioAgenda />
+              <button onClick={() => {
+          setCitar(false)
+        }}
+        className="CancelarCita">Cancelar</button>
+        </div>
+      ):(
+        <div onClick={() => {
+          setCitar(true)
+        }}>
+
+       
       <input id="BuscarUser" type="search" placeholder="Buscar"  onChange={e=>setUser(e.target.value)} />
       <div id="Profesionales">
 
         //{" "}
         <img
+          
           className="Borde_Blue"
           src="https://res.cloudinary.com/dtkirmtfq/image/upload/v1633667552/Remi/Imagen2_hyh48d.png"
           alt=""
@@ -43,11 +62,18 @@ const ListUser = () => {
                 <li>{us.estado}</li>
                 <li>Experiencia  {us.experiencia}  Años</li>
                 <li>{us.direccion}</li>
+                <div className="disponiblecolor"></div>
+                
               </ul>
             </div>
           ))} 
         </div>
+         
       </div>
+
+      </div>
+      )
+      }
     </div>
   );
 };

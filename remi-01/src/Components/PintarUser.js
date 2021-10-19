@@ -10,6 +10,7 @@ const PintarUser = () => {
   useEffect(() => {
     dispatch(listarUserAsincronico());
   }, [dispatch]);
+
   return (
     <div className="pros">
       {user ? (

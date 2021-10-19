@@ -1645,3 +1645,78 @@
    padding-left: 20px;
    font-family: 'Play', sans-serif;
 }
+
+.formularioAgenda{
+
+    display: grid;
+    background-color: rgb(16, 0, 107);
+    width: 40%;
+    height: 700px;
+    margin-left: 450px;
+    border-radius: 40px;
+    margin-top: 20px;
+}
+
+.formularioAgenda input{
+
+    width: 30%;
+    height: 25px;
+    border-radius: 5px;
+    margin-left: 190px;
+    margin-top: 20px;
+    padding-left: 20px;
+    font-family: 'Play', sans-serif;
+}
+
+.formularioAgenda button{
+
+    width: 20%;
+    height: 30px;
+    margin-left: 230px;
+    margin-top: 0px;
+    cursor: pointer;
+    background-color: #129b00;
+    font-size: 23px;
+    color: white;
+    font-family: 'Play', sans-serif;
+}
+
+.CancelarCita{
+
+    width: 10%;
+    height: 30px;
+    margin-left: 660px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #cf0606c9;
+    font-size: 23px; 
+    color: white;
+    font-family: 'Play', sans-serif;
+}
+
+.formularioAgenda h1{
+
+    font-family: 'Play', sans-serif;
+    margin-left: 180px;
+    color: white;
+}
+
+.formularioAgenda label{
+
+    width: 50%;
+    height: 25px;
+    margin-left: 120px;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-family: 'Play', sans-serif;
+}
+
+.disponiblecolor{
+
+    width: 50px;
+    height: 50px;
+    background-color: yellowgreen;
+    border-radius: 100%;
+    margin-left: 20px;
+}
