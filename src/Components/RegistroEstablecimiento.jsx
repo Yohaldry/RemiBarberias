@@ -41,11 +41,14 @@ import { fileUpload } from '../helpers/FileUpload';
        })
     }
     return (
-        <div>
+        <div className="Page_RegistroEstablecimiento">
             <form onSubmit={handleRegistro}>
                 <h1>REGISTRATE</h1>
-                <span>"Ya sea como independiente o establecimiento Fisico"</span>
+                <span>"Ya sea como barbero independiente o local de barberia "</span>
+                <div className="input">
+
                 <input
+                className="SubirImagenBarbero"
                   id="fileSelector"
                   type="file"
                   name="file"
@@ -54,8 +57,7 @@ import { fileUpload } from '../helpers/FileUpload';
                   placeholder="Imagen"
                 />
                   <button onClick={handlePictureClick} type="button"><i class="fas fa-images"></i> Imagen</button>
-                <label>NOMBRE</label><br></br>
-                <input type="text" name="nombre" placeholder="ingresa el nombre del establecimiento" value={nombre} onChange={handleInputChange} required/>
+                <input type="text" name="nombre" placeholder="ingresa el nombre" value={nombre} onChange={handleInputChange} required/>
                 <select name="estado" value={estado} onChange={handleInputChange} required>
                     <option value="Establecimiento Fisico">Establecimiento Fisico</option>
                     <option value="Barbero Independiente">Barbero Independiente</option>
@@ -67,6 +69,7 @@ import { fileUpload } from '../helpers/FileUpload';
                 <textarea type="text" name="descripcion" placeholder="Descripcion de servicios" value={descripcion} onChange={handleInputChange} required />
                 <button type="submit">Registar</button>
                 <button type="button" onClick={()=>reset()}>Cancelar</button>
+                </div>
             </form>
             
         </div>

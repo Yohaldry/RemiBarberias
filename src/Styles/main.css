@@ -1720,3 +1720,62 @@
     border-radius: 100%;
     margin-left: 20px;
 }
+
+.Page_RegistroEstablecimiento{
+
+    background: linear-gradient(to bottom, blue, white);
+    height: 500px;
+    display: flex;
+    width: 100%;
+}
+
+.Page_RegistroEstablecimiento span{
+
+    margin-left: 600px;
+    color: white;
+    margin-top: 50px;
+}
+
+.Page_RegistroEstablecimiento h1{
+
+    font-family: 'Play', sans-serif;
+    margin-left: 650px;
+    font-size: 50px;
+}
+
+.input input{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 600px;
+    margin-top: 10px;
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.input select{
+
+    margin-left: 600px;
+    width: 300px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.input textarea{
+
+    margin-left: 600px;
+    margin-top: 10px;
+    width: 400px;
+    height: 60px;
+}
+
+
+.input button{
+
+    background-color: #00d824;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    
+}
