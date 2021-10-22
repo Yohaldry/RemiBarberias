@@ -15,7 +15,7 @@ const ListEmpleo = () => {
     const [isOpenModal, setIsOpenModal] = useState(false);
 
     const { empleo } = useSelector((store) => store.empleos);
-    console.log(empleo);
+    // console.log(empleo);
     return (
         <div className="vacantesTotal">
             <input id="BuscarVacante" type="search" placeholder="Buscar"  onChange={e=>setData(e.target.value)} />
@@ -36,30 +36,29 @@ const ListEmpleo = () => {
             
           
             <Modal isOpen={isOpenModal}>
-        <ModalHeader>
-          iNFORMACIÓN SOBRE LA VACANTE
-        </ModalHeader>
         <ModalBody>
-          <div>
-          <p>Establecimiento</p>
-            <h2>{emp.establecimiento}</h2>
-            <p>Profesión</p>
-            <h3>{emp.nombre}</h3><br></br>
-        <p>Experiencia</p>
-            <p>{emp.experiencia}</p>
-            <p>Sueldo</p>
-            <p> {emp.sueldo}</p><br></br>
+        <div key={emp.uid} className="container-Modal">
+          <div className="container-items">
+          <h1 className="VacanteTitle">Vacante Disponible</h1>
+          <p className="p-items">Establecimiento</p>
+            <p className="item-list">{emp.establecimiento}</p>
+            <p className="p-items">Profesión</p>
+            <p className="item-list">{emp.nombre}</p>
+            <p className="p-items">Experiencia</p>
+            <p className="item-list">{emp.experiencia}</p>
+            <p className="p-items">Sueldo</p>
+            <p className="item-list"> {emp.sueldo}</p>
 
-            <p>Contrato</p>
-            <p>{emp.contrato}</p>
+            <p className="p-items">Contrato</p>
+            <p className="item-list">{emp.contrato}</p>
 
-            <p>Contacto</p>
-            <p>{emp.contacto}</p>
+            <p className="p-items">Contacto</p>
+            <p className="item-list">{emp.contacto}</p>
             
-            <p>Descripción</p>
-            <p>{emp.descripcion}</p>
+            <p className="p-items">Descripción</p>
+            <p className="item-list">{emp.descripcion}</p>
             </div>
-            
+            </div>
         </ModalBody>
 
       </Modal>

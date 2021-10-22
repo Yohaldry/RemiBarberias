@@ -17,9 +17,6 @@ const NavBar = () => {
 
                 <h2 onClick={() => {setMenu(true)}} className="MenuDesplegables"><i class="fas fa-bars"></i></h2>
                 <h1>R E M I</h1>
- 
-                <input type="search" placeholder="Buscar"/>
-                <button className="BotonBuscar"><i class="fas fa-search"></i></button>
               
             </div>
  

@@ -39,14 +39,11 @@ const ModalVacante = () =>{
        </div>
       </div>
       <Modal isOpen={openModal}>
-        <ModalHeader>
-          Iniciar Sesión
-        </ModalHeader>
         <ModalBody>
 
           <form onSubmit={handleRegistro}>
         <div className="containerModal">
-        <h1 className="VacanteTitle">Vacante Disponible</h1>
+        <h1 className="VacanteTitle">Registro De Vacante Disponible</h1>
           <FormGroup>
                      <input type="text" id="CamposVacante" name="establecimiento" placeholder="Nombre del Establecimiento" value={establecimiento}
                     onChange={handleInputChange}  /> 
@@ -78,7 +75,7 @@ const ModalVacante = () =>{
           
           </FormGroup>
           <FormGroup>
-            <button type="submit" className="publicarVacante" >Pubicar</button>
+            <button type="submit" className="publicarVacante" >Publicar</button>
             <button className="CancelarVacante" onClick={()=>setOpenModal(false)}>Cancelar</button>
           </FormGroup>
           </div>

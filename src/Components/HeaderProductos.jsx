@@ -87,19 +87,8 @@ const handleFileChanged = (e) => {
           {add ? (
             <div className="AddForm">
               <form onSubmit={handleRegistro}>
-                <button
-                  onClick={() => {
-                    setAdd(false);
-                  }}
-                >
-                  Cerrar
-                </button>
 
-                <button type="submit" className="guardarProducto">
-                  Guardar
-                </button>
-
-                <h1>Agregar Producto</h1>
+                <h1 className="title-pro">Agregar Producto</h1>
                 <input
                   type="text"
                   name="nombreProduct"
@@ -150,6 +139,17 @@ const handleFileChanged = (e) => {
                 />
                 <button id="SubirFoto"
                            onClick={handlePictureClick} type="button"><i class="fas fa-images"></i>  Subir Imagen</button>
+              <button
+                  onClick={() => {
+                    setAdd(false);
+                  }}
+                >
+                  Cerrar
+                </button>
+
+                <button type="submit" className="guardarProducto">
+                  Guardar
+                </button>
               </form>
             </div>
           ) : (

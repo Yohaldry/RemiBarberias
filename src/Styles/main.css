@@ -1358,11 +1358,6 @@
     margin-left: 10px;
 }
 
-
-
-
-
-
 .PublicVacante{
 
     font-family: 'Play', sans-serif;
@@ -1390,13 +1385,13 @@
 .containerModal{
 
     width: 700px;
-    height: 400px;
-    margin-left: 100px;
+    height: 460px;
+    margin-left: 400px;
     margin-top: -550px;
     background-color: #ffffff;
     transition: 0.5s;
     box-shadow: 0px 0px 20px 0px;
-    opacity: 0.9;
+    opacity: 4;
     border-radius: 20px;
 }
 
@@ -1439,6 +1434,7 @@
     border-radius: 10px;
     font-family: 'Play', sans-serif;
     font-size: 20px;
+    margin-top:2rem;
    margin-left: 200px;
    background-color: rgb(255, 255, 255);
    box-shadow: 0px 0px 5px 0px;
@@ -1550,7 +1546,7 @@
     font-family: 'Play', sans-serif;
     border: none;
     font-size: 18px;
-    margin-top: 0px;
+    margin-top: 1rem;
     height: 30px;
     background-color: rgb(0, 138, 30);
     cursor: pointer;
@@ -1631,10 +1627,10 @@
 
     width: 17%;
     height: 40px;
-   margin-top: -777px;
-   margin-left: 1174px;
-   border-bottom: 3px solid #00d824;
-   border-right: 3px solid #00d824;
+   margin-top: -845px;
+   margin-left: 1274px;
+   border-bottom: 3px solid #d8000096;
+   border-right: 3px solid #d8000096;
    border-left: none;
    border-top: none;
    background-color: rgb(10, 10, 10);
@@ -1648,32 +1644,45 @@
 
 .formularioAgenda{
 
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
     background-color: rgb(16, 0, 107);
     width: 40%;
-    height: 700px;
-    margin-left: 450px;
+    height: 900px;
     border-radius: 40px;
     margin-top: 20px;
 }
+.ti-agenda{
+    font-family: 'Play', sans-serif;
+    margin-top:2rem;
+    text-decoration: underline;
+}
 
-.formularioAgenda input{
+.formularioAgenda input, select{
 
     width: 30%;
     height: 25px;
     border-radius: 5px;
-    margin-left: 190px;
+    display: flex;
+    margin: auto;
     margin-top: 20px;
     padding-left: 20px;
     font-family: 'Play', sans-serif;
 }
+.label-select{
+    display: flex;
+    margin: auto;
+    text-align: center;
+    margin-left: 8rem;
+}
 
 .formularioAgenda button{
 
-    width: 20%;
+    width: 30%;
     height: 30px;
     margin-left: 230px;
-    margin-top: 0px;
+    margin-top: 2rem;
     cursor: pointer;
     background-color: #129b00;
     font-size: 23px;
@@ -1778,4 +1787,36 @@
     height: 30px;
     border-radius: 10px;
     
+}
+
+
+/* MODAL EMPLEO DISPONIBLE */
+
+.container-Modal{
+    width: 700px;
+    height: 700px;
+    transition: 0.5s;
+    box-shadow: 2px 4px 8px 8px rgb(255, 0, 0);
+    opacity: 0.9;
+    border-radius: 20px;
+    display: flex;
+    margin:auto;
+    border: 1px solid lightgray;
+}
+
+.container-items{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+}
+.p-items{
+    font-size:25px;
+    font-family: 'Play', sans-serif;
+    margin: 1rem;
+}
+
+.item-list{
+    font-size:20px;
+    font-family: sans-serif;
 }

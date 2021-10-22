@@ -13,7 +13,8 @@ const ListProducts = () => {
   const [term,setTerm] = useState("")
 
   const { productos } = useSelector((store) => store.productos);
-  console.log(productos);
+  // console.log(productos);
+
   return (
       <div>
          
@@ -32,8 +33,9 @@ const ListProducts = () => {
             <p>Descripcion {pro.descripcion}</p>
 
             {/* <td onClick={()=>dispatch(editarAsincrono)}><button className="editar">Editar</button></td> */}
+            <a href={`https://api.whatsapp.com/send?phone=+57${pro.telefono}&text=Hola,%20vengo%20de%20la%20pagina%20REMI%20y%20me%20interesan%20su%20Producto`} className="ContactarProducto"><i class="fab fa-whatsapp"></i> Contactar al Cliente</a>
             <button onClick={()=>dispatch(eliminarAsincrono(pro.nombre))} className="eliminarProducto">Eliminar</button>
-           <a href="https://api.whatsapp.com/send?phone=<p>{pro.telefono}</p>&text=Hola,%20vengo%20de%20la%20pagina%20REMI%20y%20me%20interesan%20su%20Producto" className="ContactarProducto"><i class="fab fa-whatsapp"></i>  Contactar al Cliente</a>
+          
             </div>
         ))
       ) : (

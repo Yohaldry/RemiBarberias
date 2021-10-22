@@ -14,7 +14,7 @@ const ListUser = () => {
   const dispatch = useDispatch();
 
   const { users } = useSelector((store) => store.user);
-  console.log(users);
+  // console.log(users);
 
   useEffect(() => {
     dispatch(listUserAsin());
@@ -24,6 +24,7 @@ const ListUser = () => {
   
   return (
     <div>
+      <input id="BuscarUser" type="search" placeholder="Buscar"  onChange={e=>setUser(e.target.value)} />
       {
 
       citar ? (
@@ -39,19 +40,16 @@ const ListUser = () => {
           setCitar(true)
         }}>
 
-       
-      <input id="BuscarUser" type="search" placeholder="Buscar"  onChange={e=>setUser(e.target.value)} />
+      
       <div id="Profesionales">
 
-        //{" "}
         <img
           
           className="Borde_Blue"
           src="https://res.cloudinary.com/dtkirmtfq/image/upload/v1633667552/Remi/Imagen2_hyh48d.png"
           alt=""
         />
-        // <h2 className="Red">La mayor red de profesionales de belleza</h2>
-        //{" "}
+         <h2 className="Red">La mayor red de profesionales de belleza</h2>
         <div className="ContenidoPrincipal">
           {users.filter(searchTermUser(user)).map((us, index) => (
             <div className="BarberiasYBarberos" key={index}>

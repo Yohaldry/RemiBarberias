@@ -7,7 +7,7 @@ const Perfil = () => {
 
     return (
         <div className="About_Perfil">
-            <h1>Perfil</h1>
+            <h1>PERFIL</h1>
         <div className="About_perfilFoto">
             <img src={image} alt="" />
          <div className="Caracteristicas_Perfil">
