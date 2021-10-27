@@ -1732,61 +1732,115 @@
 
 .Page_RegistroEstablecimiento{
 
-    background: linear-gradient(to bottom, blue, white);
-    height: 500px;
+    background: linear-gradient(to bottom, rgba(0, 0, 255, 0.603), rgba(230, 0, 0, 0.671));
+    height: 100vh;
     display: flex;
     width: 100%;
 }
 
 .Page_RegistroEstablecimiento span{
 
-    margin-left: 600px;
+    margin-left: 560px;
     color: white;
-    margin-top: 50px;
+    margin-top: 2rem;
+    font-family: 'Play', sans-serif;
+    font-size: 15px;
+}
+#icon{
+    margin-top: 2rem;
+    margin-left:1rem;
+    font-size: 80px;
+    color:black
 }
 
 .Page_RegistroEstablecimiento h1{
 
     font-family: 'Play', sans-serif;
-    margin-left: 650px;
     font-size: 50px;
+    text-align: center;
+    margin-left: 540px;
+    margin-top:2rem;
+}
+.regis-esta{
+    display: flex;
+    flex-direction: column;
+    margin-left: 540px;
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 4px 4px rgb(12, 12, 12);
+    margin-top: 2rem;
+    padding:20px;
+    
 }
 
-.input input{
-
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-left: 600px;
-    margin-top: 10px;
-    width: 400px;
+.regis-esta input{
+    margin-top: 1rem;
+    width: 100%;
     height: 30px;
     border-radius: 10px;
+    display:flex;
+    text-align: center;
+    font-family:'Play', sans-serif;
+    font-size:20px;
 }
 
-.input select{
-
-    margin-left: 600px;
+.regis-esta select{
     width: 300px;
     height: 40px;
-    margin-top: 10px;
+    margin-top: 1rem;
+    font-family:'Play', sans-serif;
+    font-size:20px;
 }
 
-.input textarea{
-
-    margin-left: 600px;
-    margin-top: 10px;
-    width: 400px;
+.regis-esta textarea{
+    margin-top: 1.5rem;
+    width: 100%;
     height: 60px;
+    display:flex;
+    text-align: center;
+    font-family:'Play', sans-serif;
+    font-size:20px;
 }
 
-
-.input button{
-
-    background-color: #00d824;
-    width: 100px;
-    height: 30px;
+.reg{
+    width: 300px;
+    height: 40px;
     border-radius: 10px;
-    
+    font-family:'Play', sans-serif;
+    font-size:30px;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    margin-top:2rem;
+    margin-left:3rem;
+}
+.can{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    font-family:'Play', sans-serif;
+    font-size:30px;
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+    color:white;
+    margin-top:2rem;
+    margin-left:3rem;
+
+}
+
+.SubirImagenBarbero{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    font-family:'Play', sans-serif;
+    font-size:30px;
+    cursor: pointer;
+    background-color: rgb(255, 166, 0);
+    color:white;
+    margin-top:1rem;
+    margin-left:3rem;
+
 }
 
 

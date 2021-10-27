@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { useForm } from "../hooks/useForm";
 import { registrarUserA} from "../actions/actionUser";
 import { fileUpload } from '../helpers/FileUpload';
+import {Link} from 'react-router-dom'
 
  const RegistroEstablecimiento = () => {
 
@@ -42,10 +43,13 @@ import { fileUpload } from '../helpers/FileUpload';
     }
     return (
         <div className="Page_RegistroEstablecimiento">
-            <form onSubmit={handleRegistro}>
+             <Link to="/" className="">
+             <i id="icon" class="fas fa-arrow-left"></i></Link>
+            <form  onSubmit={handleRegistro}>
                 <h1>REGISTRATE</h1>
                 <span>"Ya sea como barbero independiente o local de barberia "</span>
-                <div className="input">
+                <div className="regis-esta">
+                
 
                 <input
                 className="SubirImagenBarbero"
@@ -56,7 +60,7 @@ import { fileUpload } from '../helpers/FileUpload';
                   onChange={handleFileChanged}
                   placeholder="Imagen"
                 />
-                  <button onClick={handlePictureClick} type="button"><i class="fas fa-images"></i> Imagen</button>
+                  <button className="SubirImagenBarbero" onClick={handlePictureClick} type="button"><i class="fas fa-images"></i> Imagen</button>
                 <input type="text" name="nombre" placeholder="ingresa el nombre" value={nombre} onChange={handleInputChange} required/>
                 <select name="estado" value={estado} onChange={handleInputChange} required>
                     <option value="Establecimiento Fisico">Establecimiento Fisico</option>
@@ -67,8 +71,8 @@ import { fileUpload } from '../helpers/FileUpload';
                 <input type="text" name="direccion" placeholder="Dirección" value={direccion} onChange={handleInputChange} required />
                 <input type="text"  name="servicios"placeholder="Servicios Ofrecidos" value={servicios} onChange={handleInputChange} required />
                 <textarea type="text" name="descripcion" placeholder="Descripcion de servicios" value={descripcion} onChange={handleInputChange} required />
-                <button type="submit">Registar</button>
-                <button type="button" onClick={()=>reset()}>Cancelar</button>
+                <button className="reg" type="submit">Registrar</button>
+                <button className="can" type="button" onClick={()=>reset()}>Cancelar</button>
                 </div>
             </form>
             
