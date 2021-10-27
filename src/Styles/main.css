@@ -1874,3 +1874,13 @@
     font-size:20px;
     font-family: sans-serif;
 }
+.Deta{
+    width:200px;
+    height:40px;
+    border-radius: 10px;
+    font-family: 'Play', sans-serif;
+    margin-top: 2rem;
+    font-size:20px;
+    background-color:rgba(0, 128, 0, 0.692);
+    color:white;
+}

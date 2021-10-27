@@ -31,7 +31,7 @@ const ListEmpleo = () => {
             <p>Sueldo</p> 
             <p> {emp.sueldo}</p><br></br>
 
-            <button onClick={()=>setIsOpenModal(true)}>Ver más detalles</button>
+            <button className="Deta" onClick={()=>setIsOpenModal(true)}>Ver más detalles</button>
        
             
           
